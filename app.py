@@ -1,3 +1,4 @@
+# -*- coding: MS950 -*-
 #載入LineBot所需要的套件
 from flask import Flask, request, abort
 
@@ -16,7 +17,7 @@ line_bot_api = LineBotApi('dJGzSmMRuB3W1hYS7Q4Ljp7BZYjGOMzi71Gqml5iELw9rcaDGniyD
 # 必須放上自己的Channel Secret
 handler = WebhookHandler('2e6583026e25c1c4eff20500e5ed78f6')
 
-line_bot_api.push_message('1656595511', TextSendMessage(text='你可以開始了'))
+line_bot_api.push_message('1656595511', TextSendMessage(text='You can start now'))
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
